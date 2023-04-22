@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/72fdab021b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+		<span class="logo">P</span>
+		<span class="logo">o</span>
+		<span class="logo">r</span>
+		<span class="logo">t</span>
+		<span class="logo">f</span>
+		<span class="logo">o</span>
+		<span class="logo">l</span>
+		<span class="logo">i</span>
+		<span class="logo">o</span>
+		<span class="lng">EN</span>
+	</header>
+	<div class="navbar">
+		<ul>
+			<a href="#"><li class="list active"><i class="fa-solid fa-circle-user fa-lg"></i>Home</li></a>
+			<a href="#"><li class="list"><i class="fa-regular fa-id-card fa-lg"></i>Personal info</li></a>
+			<a href="#"><li class="list"><i class="fa-solid fa-briefcase fa-lg"></i>Works</li></a>
+			<a href="#"><li class="list"><i class="fa-solid fa-mug-hot fa-lg"></i>Contact</li></a>
+		</ul>
+	</div>
+    <script type="text/javascript">
+		const list = document.querySelectorAll('.list');
+		function activeLink(){
+			list.forEach((item) =>
+			item.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((item) =>
+		item.addEventListener('click',activeLink));
+	</script>
+
+<section class="context">
+
+
+
+<div class="home">
+	<div class="content">
+		<div class="headline">
+			<span class="text">Hi</span>
+			<div class="hider"></div>
+		</div>
+		<div class="headline">
+			<span class="text">There!</span>
+			<div class="hider"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+</section>
+</body>
+</html>
