@@ -5,60 +5,72 @@
   src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 *{
-	margin: 0;
-	padding: 0;
-	scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior:smooth;
 }
 .container{
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 1200px;
-	max-width: 1200px;
-	margin-left: 140px;
-  height: 100%;
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 1200px;
+  max-width: 1200px;
+  margin-left: 140px;
+  height: fill;
+  overflow: hidden;
   font-family: Product sans;
 }
 .container .home{
-	height: 700px;
-	max-height: 700px;
+  height: fill;
+  max-height: fill;
+  padding-bottom:200px ;
 }
 .container .about{
-	height: 750px;
-	max-height: 750px;
+  position: relative;
+  height: fill;
+  max-height: fill;
+  padding-bottom: 300px;
 }
 .container .skills{
-	height: 2200px;
+  position: relative;
+  height: fill;
+  max-height: fill;
+  width: 1200px;
   max-width: 1200px;
-	max-height: 2200px;
+  display: block;
+  justify-content: center;
 }
 .container .skills .pskills{
-	position: relative;
-	height: 800px;
-	max-height: 800px;
+  position: relative;
+  height: fill;
+  max-height: fill;
+  margin-top: 50px;
 }
 .container .skills .sskills{
-	position: absolute;
-	height: 700px;
-	max-height: 700px;
-  margin-top: 1000px;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
 .container .skills .intrest{
-	position: absolute;
-	height: 800px;
-	max-height: 800px;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
+
 .container .works{
-	height: 1400px;
-	max-height: 1400px;
+  position: relative;
+  height: fill;
+  max-height: fill;  
 }
 .container .imgfolio{
-  height: 2000px;
-  max-height: 2000px;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
 
 .container .contact{
+  position: relative;
   height: 750px;
   max-height: 750px;
 }
@@ -105,6 +117,9 @@ header .lng{
   color:#3c4043;
 }
 
+header .media_nav{
+  display: none;
+}
 
 
 .navbar{
@@ -164,6 +179,8 @@ a{
   width: 24px;
   padding: 0px 16px 0px 0px;
 }
+
+
 
 
 
@@ -439,8 +456,8 @@ a{
 
 
 .container .about{
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: hidden;
   font-family: Product sans;
@@ -453,10 +470,9 @@ a{
   position: absolute;
   display: flex;
   font-size: 80px;
-  margin-top: -60%;
+  margin-top: 0;
   font-family: Product sans;
 }
-
 
 .about .aboutplace{
   position: relative;
@@ -493,6 +509,7 @@ a{
   border-radius: 50px;
   border: 5px solid #cadeef;
   background: #cadeef;
+  margin-top: 250px;
 }
 
 .about .intro{
@@ -524,66 +541,45 @@ a{
 
 
 
-
-
-
-.container .skills{
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
-
-
-
-
 .container .skills .pskills{
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-
-
-
 .container .skills .title{
-  position: absolute;
-  display: flex;
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-84.565px,0);
   font-size: 80px;
   font-family: Product sans;
-  margin-top: 125px;
 }
 
 .skills .pskills{
   max-width: 1200px;
   width: 1200px;
-  position: absolute;
   display: flex;
-  margin-top: 200px;
 }
 
 .skills .pskills .ptitle{
   position: absolute;
-  display: flex;
+  display: block;
   font-size: 60px;
-  margin-top: -550px;
 }
 
 .pskills .pbars{
-  margin-top: 400px;
-  position: absolute;
+  margin-top: 120px;
+  position: relative;
   display: flex;
-  height: 100%;
+  height: fill;
   width: 1200px;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .pskills ul{
-  position: absolute;
+  position: relative;
   margin-top: 50px;
   list-style: none;
   font-family: Product Sans;
@@ -596,6 +592,7 @@ a{
   border-radius: 5px;
   margin:2px ;
   background: #BBDEFB;
+  transition: 0.3s;
 }
 
 .pskills ul li .pname{
@@ -614,7 +611,7 @@ a{
 }
 
 .pskills ul li .bar{
-  position: absolute;
+  position: relative;
   display: block;
   height: 100px;
   width: 800px;
@@ -678,6 +675,10 @@ a{
 .pskills ul li:nth-child(5) .fill::before{
   width: 50%;
   background:#4285F4;
+}
+
+.pskills ul li:hover{
+  border-radius: 50px;
 }
 
 .pskills ul li:nth-child(1):hover .fill::before{
@@ -747,11 +748,10 @@ a{
 
 
 .skills .sskills{
-  position: absolute;
+  position: relative;
   max-width: 1200px;
   width: 1200px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -759,11 +759,10 @@ a{
   position: absolute;
   display: flex;
   font-size: 60px;
-  margin-top: -450px;
 }
 
 .skills .sskills .tilecontainer{
-  margin-top: 150px;
+  margin-top: 120px;
   width: 1200px;
   max-width: 1200px;
   padding: 50px;
@@ -807,20 +806,11 @@ a{
   background: #34A853;
 }
 
-
-
-
-
-
-
-
-
-
 .skills .intrest{
-  position: absolute;
-  margin-top: 1700px;
+  position: relative;
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .skills .intrest .ititle{
@@ -831,13 +821,12 @@ a{
 
 
 .skills .intrest .icontainer{
-  position: absolute;
   display: block;
   align-items: center;
   justify-content: center;
   width: 900px;
-  max-width: 900px;
-  height: 500px;
+  max-width: 1200px;
+  height: fill;
   margin-top: 150px;
 }
 
@@ -896,6 +885,9 @@ a{
 
 
 
+
+
+
 .container .works{
   display: flex;
   justify-content: center;
@@ -908,7 +900,7 @@ a{
 .works .websites{
     display: flex;
     justify-content: center;
-    max-height: 750px;
+    max-height: fill;
     width: 1200px;
     max-width: 1200px;
     margin-top: 300px;
@@ -1063,3 +1055,18 @@ a{
   grid-column: span 2;
   grid-row: span 2;
 }
+
+.bgcontainer{
+      position: absolute;
+      top:0;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin-left: 100px;
+  max-width: 1300px;
+      height: fill;
+      width: 100%;
+      opacity: 0.8;
+      margin-top: 50px;
+    }
+
+
