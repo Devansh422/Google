@@ -2,12 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
 	<script src="https://kit.fontawesome.com/72fdab021b.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
+
+<div class="bgcontainer">
+	<object type="image/svg+xml" data="background.svg" class="bgcontent">
+</object>
+</div>
+
 	<div class="container">
 		<div class="home" id="home">
 			<div class="content">
@@ -64,7 +76,9 @@
 						My skills include proficiency in HTML, CSS, JavaScript, and various web development frameworks such as React, Angular, and Vue. 
 						I am constantly learning and staying up-to-date with the latest web development trends and technologies to ensure that my clients receive the best possible solutions. 
 					</span>
+					
 					<div class="conxt"><div class="image"></div></div>
+					
 				</div>
 			</div>
 			<span class="footer">
@@ -202,6 +216,18 @@
 		<span class="logo">i</span>
 		<span class="logo">o</span>
 		<span class="lng">EN</span>
+
+
+		<div class="media_nav">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">Info</a></li>
+				<li><a href="#works">Works</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+			</ul>
+		</div>
+
+
 	</header>
 
 	<script type="text/javascript">
@@ -214,5 +240,7 @@
 		list.forEach((item) =>
 			item.addEventListener('click', activeLink));
 		</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>	
 </body>
 </html>
