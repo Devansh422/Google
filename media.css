@@ -1,0 +1,308 @@
+@media(max-width:1200px){
+	*{
+		margin: 0;
+		padding: 0;
+		scroll-behavior: smooth;
+
+	}
+	html{
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+	header .lng{
+		display: none;
+	}
+	.navbar{
+		display: none;
+	}
+
+	header .media_nav{
+		display: flex;
+	}
+	header .media_nav ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		top:0;
+		right: 60px;
+		display: flex;
+	}
+	header .media_nav ul li{
+		margin: 13px;
+		font-family: Product Sans;
+
+	}
+	header .media_nav ul li a{
+		text-decoration: none;
+		font-size: 20px;
+		padding: 10px 20px 10px 20px;
+		color: #000;
+		border-radius: 50px;
+	}
+	header .media_nav ul li a:hover{
+		background-color: #e8f0fe;
+	}
+	header{
+		padding: 10px;
+		padding-left: 30px;
+		height: 30px;
+	}
+
+.container{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0px;
+  height: fill;
+  font-family: Product sans;
+}
+.container .home{
+  position: relative;
+  height: fill;
+  max-height: fill;
+}
+.container .about{
+  height: fill;
+  max-height: 1000px;
+  background: #222;
+  padding-bottom: 20px;
+}
+.container .skills{
+	display: none;
+  height: 2200px;
+  max-width: 1200px;
+  max-height: 2200px;
+  background: #333;
+}
+.container .skills .pskills{
+  position: relative;
+  height: 800px;
+  max-height: 800px;
+  background: #444;
+  overflow: hidden;
+}
+.container .skills .sskills{
+  position: absolute;
+  height: 700px;
+  max-height: 700px;
+  margin-top: 1000px;
+  background: #555;
+  overflow: hidden;
+}
+.container .skills .intrest{
+  position: absolute;
+  height: 800px;
+  max-height: 800px;
+  background: #666;
+  overflow: hidden;
+}
+.container .works{
+	display: none;
+  height: 1400px;
+  max-height: 1400px;
+  background: #777;
+  overflow: hidden;
+}
+.container .imgfolio{
+	display: none;
+  height: 2000px;
+  max-height: 2000px;
+  background: #888;
+}
+
+.container .contact{
+	display: none;
+  height: 750px;
+  max-height: 750px;
+  background: #999;
+}
+
+
+
+
+
+
+
+.headline{
+  display:inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.content{
+  padding-top: 450px;
+  padding-left: 50px;
+  float: bottom;
+  font-family: Product Sans;
+}
+
+.home .context .title{
+  position: absolute;
+  margin-top: -156px;
+  margin-left: 210px;
+  font-size: 5rem;
+}
+
+.home .context .subtitle{
+  position: absolute;
+  font-size: 30px;
+  margin-top: -70px;
+  margin-left: 1px;
+}
+
+.social{
+  margin-top: 0px;
+  margin-left: -20px;
+  padding: 0;
+}
+
+
+
+
+.homedoodle{
+  position: relative;
+}
+
+.homeanime{
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%,-50%);
+      margin-top: -400px;
+    }
+
+
+
+
+
+
+.container .about{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: fill;
+  font-family: Product sans;
+}
+.container .about .title{
+  position: absolute;
+  display: flex;
+  font-size: 80px;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-family: Product sans;
+  margin-top: 20px;
+}
+
+
+.about .conxt{
+  position: relative;
+  margin-top: 5px;
+  display: block;
+  height: 300px;
+  width: 300px;
+  border: 5px sloid #3c4043;
+  border-radius: 45px;
+  padding-right: 0;
+}
+
+.about .image{
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px;
+  border:5px solid #0784b5;
+  border-radius: 45px;
+}
+
+
+.about .aboutplace{
+}
+.about .aboutcontainer{
+  position: relative;
+  display: flex;
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 50px;
+  border: 5px solid #cadeef;
+  background: #cadeef;
+  margin:200px 50px 0px 50px ;
+}
+
+.about .intro{
+  position: relative;
+  display: block;
+  padding: 50px 30px 50px 30px;
+  margin-right: 5px;
+  color: #fff;
+  box-sizing: border-box;
+  border: 5px solid #0784b5;
+  border-radius: 45px;
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  font-size: 20px;
+  background: #0784b5;
+}
+
+.about .footer{
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-align: center;
+  font-size: 30px;
+  width: 900px;
+  max-width: 1000px;
+  font-weight: 900;
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:800px){
+
+  .container .about{
+    height: 200%;
+  max-height: 1300px;
+  background: #222;
+  padding-bottom: 100px;
+  overflow: hidden;
+  }
+
+  .about .conxt{
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+.about .aboutcontainer{
+  display: block;
+  margin: 0px 20px 0px 20px;
+}  
+
+.about .aboutplace{
+  margin-top: 200px;
+}
+.about .footer{
+  font-size: 30px;
+  width: 600px;
+}
+}
