@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="media.css">
 	<script src="https://kit.fontawesome.com/72fdab021b.js" crossorigin="anonymous"></script>
@@ -137,50 +138,7 @@
 			<span class="imgtitle"><b>Photography</b></span>
 			<span class="imgbreif">All images are captured on mobile.</span>
 			<div class="pcontainer">
-				<div class="grid-wrapper">
-					<div>
-						<img src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="" />
-					</div>
-					<div>
-						<img src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80" alt="" />
-					</div>
-					<div class="tall">
-						<img src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="">
-					</div>
-					<div class="wide">
-						<img src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" />
-					</div>
-					<div>
-						<img src=" https://images.unsplash.com/photo-1558980663-3685c1d673c4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60" alt="" />
-					</div>
-					<div class="tall">
-						<img src="https://images.unsplash.com/photo-1588499756884-d72584d84df5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80" alt="" />
-					</div>
-					<div class="big">
-						<img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
-					</div>
-					<div>
-						<img src="https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80" alt="" />
-					</div>
-					<div class="wide">
-						<img src="https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="" />
-					</div>
-					<div class="big">
-						<img src="https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
-					</div>
-					<div class="tall">
-						<img src="https://images.unsplash.com/photo-1588453862014-cd1a9ad06a12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt="" />
-					</div>
-					<div>
-						<img src="https://images.unsplash.com/photo-1588414734732-660b07304ddb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" alt="" />
-					</div>
-					<div>
-						<img src="https://images.unsplash.com/photo-1588224575346-501f5880ef29?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="" />
-					</div>
-					<div>
-						<img src="https://images.unsplash.com/photo-1574798834926-b39501d8eda2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
-					</div>
-				</div>
+				<div class="gallery"></div>
 			</div>
 		</div>
 		<footer id="contacts"></footer>
@@ -229,6 +187,82 @@
 
 
 	</header>
+
+	<script>
+    const apiKey = '563492ad6f91700001000001910d530d60684ef3aed797e0af8193c6';
+    const photoIds = ['17375602', '15016504', '17341099', '15016388','14053886', '16755413','16025576', '15034634', '16755417', '14827619','14882214', '14752389', '14506132', '15818954', '13164123', '17482759', '15766806', '15725527', '15725529', '']; // Add more photo IDs here
+    const galleryElement = document.querySelector('.gallery');
+
+    function updateLikeCount(photoId, likeButton, likeCounter) {
+      let count = parseInt(likeCounter.textContent);
+      const likedPhotos = JSON.parse(localStorage.getItem('likedPhotos')) || [];
+      if (!likedPhotos.includes(photoId)) {
+        count++;
+        likedPhotos.push(photoId);
+        localStorage.setItem('likedPhotos', JSON.stringify(likedPhotos));
+        likeButton.classList.add('active');
+      } else {
+        count--;
+        likedPhotos.splice(likedPhotos.indexOf(photoId), 1);
+        localStorage.setItem('likedPhotos', JSON.stringify(likedPhotos));
+        likeButton.classList.remove('active');
+      }
+      likeCounter.textContent = count;
+    }
+
+    async function getPhotos() {
+      try {
+        for (const photoId of photoIds) {
+          const photoUrl = `https://api.pexels.com/v1/photos/${photoId}`;
+          const response = await fetch(photoUrl, {
+            headers: {
+              Authorization: apiKey
+            }
+          });
+          const data = await response.json();
+          const photo = data;
+
+          const img = document.createElement('img');
+          img.src = photo.src.large;
+          img.alt = photo.photographer;
+
+          const link = document.createElement('a');
+          link.href = photo.url;
+          link.target = '_blank';
+          link.appendChild(img);
+
+          const likeButton = document.createElement('button');
+          likeButton.classList.add('like-button');
+          likeButton.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+          likeButton.addEventListener('click', () => {
+            const likeCounter = galleryItem.querySelector('.like-counter');
+            updateLikeCount(photoId, likeButton, likeCounter);
+          });
+
+          const likeCounter = document.createElement('div');
+          likeCounter.classList.add('like-counter');
+          likeCounter.textContent = '0';
+
+          const galleryItem = document.createElement('div');
+          galleryItem.classList.add('gallery-item');
+          galleryItem.appendChild(link);
+          galleryItem.appendChild(likeButton);
+          galleryItem.appendChild(likeCounter);
+
+          const likedPhotos = JSON.parse(localStorage.getItem('likedPhotos')) || [];
+          if (likedPhotos.includes(photoId)) {
+            likeButton.classList.add('active');
+          }
+
+          galleryElement.appendChild(galleryItem);
+        }
+      } catch (error) {
+        console.log('Error:', error.message);
+      }
+    }
+
+    getPhotos();
+  </script>
 
 	<script type="text/javascript">
 		const list = document.querySelectorAll('.list');
