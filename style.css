@@ -71,8 +71,8 @@
 
 .container .contact{
   position: relative;
-  height: 750px;
-  max-height: 750px;
+  height: fill;
+  max-height: fill;
 }
 
 
@@ -80,6 +80,23 @@
 
 
 
+
+nav{
+    height: 84px;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+.hamburger{
+    display: none;
+}
+
+.nav-links{
+    display: none;
+}
+
+/*Styling logo*/
 
 header{
   position: fixed;
@@ -90,6 +107,7 @@ header{
   padding-left: 30px;
   background:#fff;
 }
+
 header .logo{
   position: relative;
   font-family: Product sans;
@@ -110,17 +128,16 @@ header .logo{
   &:nth-child(9) {color : #4285F4}
 }
 
-header .lng{
-  display: inline-flex;
-  padding-left: 87%;
-  font-family: Product sans;
-  color:#3c4043;
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,7px);
 }
-
-header .media_nav{
-  display: none;
+.toggle .line2{
+    transition: all 0.2s ease;
+    width:0;
 }
-
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-7px);
+}
 
 .navbar{
   position: fixed;
@@ -1069,6 +1086,180 @@ a{
       display: none;
     }
 
+    .container .contact{
+  position: relative;
+  height: fill;
+  max-height: fill;
+  display: flex;
+  justify-content: center;
+}
+
+.ccontainer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.08);
+}
+.ccontainer .ctitle{
+    position: absolute;
+    display: block;
+    font-size: 60px;
+    font-weight: 800;
+}
+.ccontainer .ctitle b{
+    color: #0784b5;
+}
+.ccontainer .fplace{
+    height: fill;
+    width: 1200px;
+    max-width: 1200px;
+    position: relative;
+  display: flex;
+  justify-content: center;
+  height: fill;
+  padding-bottom: 100px;
+}
+.ccontainer .fcontainer{
+    margin-top: 150px;
+  position: relative;
+  display: flex;
+  height: fill;
+  width: fill;
+  padding: 10px;
+  justify-content: center;
+  background: #0784b5;
+  border-radius: 36px;
+}
+.form--social{
+    position: absolute;
+    display: flex;
+    height: fill;
+    max-height: fill;
+    list-style: none;
+}
+.form--social li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+    background: #BBDEFB;
+    height: 100px;
+    width: 100px;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.form--social li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+.form--social li:nth-child(1){
+    margin-left: 0px;
+    border-top-left-radius: 30px;
+}
+.form--social li:nth-last-child(1){
+    border-top-right-radius: 30px;
+}
+.form--social li:hover{
+    border-radius: 30px;
+}
+
+.fcontainer .form{
+    position: relative;
+    height: fill;
+    max-height: fill;
+    list-style: none;
+    margin-top:100px;
+}
+.form li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    background: #BBDEFB;
+    height: 50px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.form li:hover{
+    border-radius: 30px;
+}
+.form li:nth-child(3){
+    justify-content: center;
+}
+.form li:nth-child(3):hover{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.form li:nth-last-child(1){
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.form li label{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 120px;
+}
+.form li input{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 120px;
+    font-size: 20px;
+    width: 372px;
+    color: #000;
+    font-family: Product Sans;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    margin-top: -4px;
+}
+.form li textarea{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 10px;
+    font-family: Product Sans;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    resize: none;
+    color: #fff;
+}
+.form li:nth-child(4){
+    height: 150px;
+}
+.form li:nth-last-child(1) input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 20px;
+  width: 100%;
+  color: #000;
+  margin-left: 0px;
+  font-family: Product Sans;
+  background: transparent;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+}
 .bgcontainer{
       position: absolute;
       top:0;
@@ -1078,9 +1269,11 @@ a{
   max-width: 1300px;
       height: fill;
       width: 100%;
-      opacity: 0.8;
+      opacity: 1;
       margin-top: 50px;
     }
+
+
 
 
 
