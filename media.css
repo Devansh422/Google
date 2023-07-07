@@ -144,7 +144,7 @@ nav{
   padding-bottom:50px ;
 }
 .content{
-  padding-top: 450px;
+  padding-top: 500px;
   padding-left: 50px;
   font-family: Product Sans;
 }
@@ -202,7 +202,7 @@ nav{
       position: absolute;
       left:50%;
       transform: translate(-50%,0);
-      top: -550px;
+      top: -500px;
 }
 
 
@@ -430,7 +430,7 @@ nav{
 
 
 .content{
-  padding-top: 500px;
+  padding-top: 450px;
   padding-left: 30px;
   width: fill;
   font-family: Product Sans;
@@ -485,7 +485,7 @@ nav{
       position: absolute;
       left:50%;
       transform: translate(-50%,0);
-      top: -375px;
+      top: -300px;
     }
 
     .svgstatic svg{
