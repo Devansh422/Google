@@ -10,53 +10,64 @@
 		padding: 0;
 	}
 
+.bgcontainer{
+  display: none;
+}
 
+.navbar{
+  display: none;
+}
 
-	header .lng{
-		display: none;
-	}
-	.navbar{
-		display: none;
-	}
+header{
+    padding: 10px;
+    height: 30px;
+}
+nav{
+    height: 50px;
+}
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0;
+    margin-top: 0px;
+    justify-content: right;
+    font-family: Product Sans;
+    font-size: 20px;
+    align-items: center;
+}
+.nav-links li a{
+    text-decoration: none;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        color: #000;
+        border-radius: 50px;
+}
+.nav-links li a:hover {
+    background-color: #e8f0fe;
+}
+.nav-links li {
+    position: relative;
+    margin-left: 10px;
+}
 
-	header .media_nav{
-		display: flex;
-	}
-	header .media_nav ul{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		position: absolute;
-		top:0;
-		right: 60px;
-		display: flex;
-	}
-	header .media_nav ul li{
-		margin: 13px;
-		font-family: Product Sans;
-
-	}
-	header .media_nav ul li a{
-		text-decoration: none;
-		font-size: 20px;
-		padding: 10px 20px 10px 20px;
-		color: #000;
-		border-radius: 50px;
-	}
-	header .media_nav ul li a:hover{
-		background-color: #e8f0fe;
-	}
-	header{
-		padding: 10px;
-		padding-left: 30px;
-		height: 30px;
-	}
-
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:4px;
+    background: #000;
+    margin: 5px;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+.hamburger{
+    display: none;
+}
 .container{
   position: absolute;
-  top:50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,0%);
   width: 100%;
   max-width: 100%;
   margin-left: 0px;
@@ -69,59 +80,52 @@
   max-height: fill;
 }
 .container .about{
+  position: relative;
   height: fill;
-  max-height: 1000px;
-  background: #222;
-  padding-bottom: 20px;
+  max-height: fill;
+  padding-bottom: 300px;
 }
 .container .skills{
-	display: none;
-  height: 2200px;
-  max-width: 1200px;
-  max-height: 2200px;
-  background: #333;
+  position: relative;
+  height: fill;
+  max-height: fill;
+  width: fill;
+  max-width: fill;
+  display: block;
+  justify-content: center;
 }
 .container .skills .pskills{
   position: relative;
-  height: 800px;
-  max-height: 800px;
-  background: #444;
-  overflow: hidden;
+  height: fill;
+  max-height: fill;
+  margin-top: 50px;
 }
 .container .skills .sskills{
-  position: absolute;
-  height: 700px;
-  max-height: 700px;
-  margin-top: 1000px;
-  background: #555;
-  overflow: hidden;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
 .container .skills .intrest{
-  position: absolute;
-  height: 800px;
-  max-height: 800px;
-  background: #666;
-  overflow: hidden;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
+
 .container .works{
-	display: none;
-  height: 1400px;
-  max-height: 1400px;
-  background: #777;
-  overflow: hidden;
+  position: relative;
+  height: fill;
+  max-height: fill;  
 }
 .container .imgfolio{
-	display: none;
-  height: 2000px;
-  max-height: 2000px;
-  background: #888;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
 
 .container .contact{
-	display: none;
-  height: 750px;
-  max-height: 750px;
-  background: #999;
+  position: relative;
+  height: fill;
+  max-height: fill;
 }
 
 
@@ -130,23 +134,34 @@
 
 
 
-.headline{
-  display:inline-flex;
-  margin: 0;
-  padding: 0;
+
+
+
+
+.container .home{
+  height: fill;
+  max-height: fill;
+  padding-bottom:50px ;
 }
 .content{
-  padding-top: 450px;
+  padding-top: 500px;
   padding-left: 50px;
-  float: bottom;
   font-family: Product Sans;
 }
-
+.headline .text{
+  position: absolute;
+  display: block;
+  font-family: Product Sans;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  padding-top: 0px;
+}
 .home .context .title{
   position: absolute;
-  margin-top: -156px;
+  margin-top: -140px;
   margin-left: 210px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .home .context .subtitle{
@@ -161,21 +176,34 @@
   margin-left: -20px;
   padding: 0;
 }
+.social ul{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Product Sans;
+}
 
+.social ul li{
+  text-decoration: none;
+  padding: 20px;
+  margin: 0;
+}
 
-
-
+.social ul li a{
+  color: #000;
+}
 .homedoodle{
   position: relative;
+  transform: scale(1.2);
 }
 
 .homeanime{
       position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%,-50%);
-      margin-top: -400px;
-    }
+      left:50%;
+      transform: translate(-50%,0);
+      top: -500px;
+}
 
 
 
@@ -183,7 +211,6 @@
 
 
 .container .about{
-  display: block;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -269,6 +296,50 @@
 
 
 
+.container .skills .pskills{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container .skills .title{
+  position: relative;
+  display: block;
+  left: 0;
+  font-size: 80px;
+  font-family: Product sans;
+}
+
+.skills .pskills{
+  max-width: fill;
+  width: fill;
+  display: flex;
+  transform: scale(0.5);
+}
+
+.skills .pskills .ptitle{
+  position: absolute;
+  display: block;
+  font-size: 60px;
+}
+
+.pskills .pbars{
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+  height: fill;
+  width: fill;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -305,4 +376,264 @@
   font-size: 30px;
   width: 600px;
 }
+nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.2s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+        margin-top: 30px;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+        margin-top: 200px;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+
+
+.content{
+  padding-top: 500px;
+  padding-left: 30px;
+  width: fill;
+  font-family: Product Sans;
+}
+
+.home .context .title{
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -2px;
+  font-size: 3rem;
+  padding-right: 20px;
+}
+
+.home .context .subtitle{
+  position: absolute;
+  font-size: 20px;
+  width: 200px;
+  margin-top: -30px;
+  padding-right: 20px;
+  margin-left: 1px;
+}
+
+.social{
+  margin-top: 40px;
+  margin-left: -20px;
+  padding: 0;
+}
+.social ul{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Product Sans;
+  margin-left: 5px;
+}
+
+.social ul li{
+  text-decoration: none;
+  padding: 20px 15px 10px 15px;
+  margin: 0;
+}
+
+.social ul li a{
+  color: #000;
+}
+.homedoodle{
+  position: relative;
+  transform: scale(1.6);
+}
+
+.homeanime{
+      position: absolute;
+      left:50%;
+      transform: translate(-50%,0);
+      top: -375px;
+    }
+
+    .svgstatic svg{
+      position: relative;
+      height: 300px;
+      width: 100%;
+      padding-top: 0;
+      animation: svgstatic 3s linear infinite;
+    }
+
+    @keyframes svgstatic{
+      0%{
+        padding-top: 0;
+      }
+      50%{
+        padding-top: 5%;
+      }
+      100%{
+        padding-top: 0;
+      }
+    }
+
+    .svganime1{
+      position: absolute;
+      margin-top: 4%;
+      margin-left: 5%;
+    }
+
+    .svganime1 svg{
+      position: relative;
+      height: 300px;
+      width: 100%;
+    }
+
+    .svganime2{
+      position: absolute;
+      margin-top: 55%;
+      margin-left: 55%;
+    }
+
+    .svganime2 svg{
+      position: relative;
+      height: 30px;
+      width: 100%;
+      animation: svganime2 4s linear infinite;
+    }
+
+    @keyframes svganime2{
+      0%{
+        padding-top: 0;
+        transform: rotate(0deg);
+      }
+      50%{
+        padding-top: 10%;
+        transform: rotate(10deg);
+      }
+      100%{
+        padding-top: 0;
+        transform: rotate(0deg);
+      }
+    }
+
+
+
+    .svganime3{
+      position: absolute;
+      margin-top: 83%;
+      margin-left: 27%;
+    }
+
+    .svganime3 svg{
+      position: relative;
+      height: 35px;
+      width: 70px;
+      animation: svganime3 2.6s linear infinite;
+    }
+
+    @keyframes svganime3{
+      0%{
+        padding-left: 0;
+      }
+      50%{
+        padding-left: 8%;
+      }
+      100%{
+        padding-left: 0;
+      }
+    }
+
+
+    .svganime4{
+      position: absolute;
+      width: 130px;
+      margin-left: 10%;
+    }
+
+    .svganime4 svg{
+      position: relative;
+      height: 280px;
+      width: 100%;
+      animation: svganime4 2.6s linear infinite;
+    }
+
+    @keyframes svganime4{
+      0%{
+        padding-left: 0;
+        transform: rotate(0deg);
+      }
+      50%{
+        transform: rotate(7deg);
+      }
+      100%{
+        transform: rotate(0deg);
+      }
+    }
+
+
+
+    .svganime5{
+      position: absolute;
+      width: 40px;
+      margin-top: 63%;
+      margin-left: 77%;
+    }
+
+    .svganime5 svg{
+      position: relative;
+      height: 100px;
+      width: 100%;
+      animation: svganime5 2.6s linear infinite;
+    }
+
+    @keyframes svganime5{
+      0%{
+        padding-left: 0;
+        transform: rotate(0deg);
+      }
+      50%{
+        transform: rotate(10deg);
+      }
+      100%{
+        transform: rotate(0deg);
+      }
+    }
+
+
+
+
+
+
 }
