@@ -512,7 +512,7 @@ a{
   width: 300px;
   border:5px solid #0784b5;
   border-radius: 40px;
-  oveflow:hidden;
+  overflow: hidden;
 }
 .about .image img{
   width: 100%;
