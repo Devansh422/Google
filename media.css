@@ -497,6 +497,50 @@ nav{
 }
 
 
+.container .works{
+  position: relative;
+  height: fill;
+  max-height: fill;  
+}
+
+.container .works{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.works .wotitle{
+  position: absolute;
+  font-size: 80px;
+}
+
+.works .websites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: fill;
+    width: fill;
+    max-width: fill;
+    margin-top: 300px;
+}
+
+.websites .wtitle{
+    position: absolute;
+    margin-top: -150px;
+    font-size: 60px;
+}
+.websites ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: fill;
+    width: fill;
+    padding: 20px;
+    margin-top: -150px;
+    transform: scale(0.76);
+}
+
+
 
 
 
