@@ -52,6 +52,8 @@ nav{
     }
 
 
+
+
 .content{
   padding-top: 350px;
   padding-left: 30px;
@@ -261,6 +263,8 @@ nav{
 .about .footer{
   font-size: 25px;
 }
+
+
 .container .skills .title{
   font-size: 60px;
   transform: translate(-63.425px,0);
@@ -328,6 +332,18 @@ nav{
   align-items: center;
   justify-content: center;
 }
+
+
+.skills .intrest .icontainer .itile .iname svg{
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.skills .intrest .icontainer{
+  margin-top: 70px;
+}
+
 
 
 }
