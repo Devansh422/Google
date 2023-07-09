@@ -304,28 +304,47 @@ nav{
   bottom: 50px;
 }
 
-
-
+.container .skills{
+  position: relative;
+  height: fill;
+  max-height: fill;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  justify-content: center;
+}
+.container .skills .pskills{
+  position: relative;
+  height: fill;
+  max-height: fill;
+  margin-top: 50px;
+  width: 100%;
+}
+.container .skills .sskills{
+  position: relative;
+  height: fill;
+  max-height: fill;
+  width: 100%;
+}
+.container .skills .intrest{
+  position: relative;
+  height: fill;
+  max-height: fill;
+  width: 100%;
+}
 
 .container .skills .pskills{
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-.container .skills .title{
-  position: relative;
-  display: block;
-  left: 0;
-  font-size: 80px;
-  font-family: Product sans;
-}
 
 .skills .pskills{
-  max-width: fill;
-  width: fill;
+  max-width: 100%;
+  width: 100%;
   display: flex;
-  transform: scale(0.5);
 }
 
 .skills .pskills .ptitle{
@@ -339,9 +358,142 @@ nav{
   position: relative;
   display: flex;
   height: fill;
-  width: fill;
+  width: 100%;
   justify-content: center;
   padding-bottom: 100px;
+}
+
+.pskills ul li{
+  display: block;
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  margin:2px ;
+  background: #BBDEFB;
+  transition: 0.3s;
+}
+.pskills ul li .bar{
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 500px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  margin-top: -101px;
+  margin-left: 305px;
+}
+
+
+
+
+
+
+.skills .sskills{
+  position: relative;
+  max-width: 1200px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills .sskills .stitle{
+  position: absolute;
+  display: flex;
+  font-size: 60px;
+}
+
+.skills .sskills .tilecontainer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  padding: 50px;
+}
+
+.skills .sskills .tilecontainer .tile{
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+}
+
+.skills .sskills .tilecontainer .tile .sname{
+  display: flex;
+  height: 150px;
+  width: 300px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+
+
+.skills .intrest{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.skills .intrest .ititle{
+  position: absolute;
+  display: block;
+  font-size: 60px;
+}
+
+
+.skills .intrest .icontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width:fit-content;
+  max-width: fit-content;
+  height: fill;
+  margin-top: 150px;
+}
+
+.skills .intrest .icontainer .itile{
+  display: inline-flex;
+  align-items:center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px 10px 20px 10px;
+}
+
+.skills .intrest .icontainer .itile .iname{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #BBDEFB;
+  background: #0784b5;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.skills .intrest .icontainer .itile .iname svg{
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+
+.skills .intrest .icontainer .itile:hover .iname svg{
+  display: block;
+  height: 80px;
+  width: 80px;
+  animation: svganime 0.2s linear infinite;
 }
 
 
