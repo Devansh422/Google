@@ -383,6 +383,49 @@ nav{
     margin-left: 40px;
     cursor: default;
 }
+.imgfolio .imgtitle{
+  position: absolute;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.imgfolio .pcontainer{
+  max-width:fill;
+  width: fill;
+  padding: 50px;
+  margin-top: 250px;
+}
+
+.imgfolio .imgbreif{
+  position: absolute;
+  margin-top: 170px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery-item {
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      border-radius: 30px;
+    }
+ 
+
 
 
 
