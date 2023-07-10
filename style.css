@@ -1273,7 +1273,7 @@ a{
   max-width: 1300px;
       height: fill;
       width: 100%;
-      opacity: 1;
+      opacity: 0.8;
       margin-top: 50px;
     }
 
