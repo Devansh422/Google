@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="media.css">
@@ -23,6 +24,7 @@
 </div>
 
 	<div class="container">
+		<div data-aos="fade-up">
 		<div class="home" id="home">
 			<div class="content">
 				<div class="headline">
@@ -67,7 +69,8 @@
 										</div>
 			</div>
 			<footer id="about"></footer>
-		</div>
+		</div></div>
+		<div data-aos="fade-up">
 		<div class="about">	
 			<span class="title" id="about"><b>About</b></span>
 			<div class="aboutplace">
@@ -87,9 +90,10 @@
 				In this portfolio, you will find some of my recent projects that showcase my skills and expertise.<br>
 				Thank you for visiting and I look forward to working with you!
 			</span>
-		</div>
+		</div></div>
 		<div class="skills">
 			<span class="title"><b>Skills</b></span>
+			<div data-aos="fade-up">
 			<div class="pskills">
 				<span class="ptitle"><b>Programming Skills</b></span>
 				<div class="pbars">
@@ -101,7 +105,8 @@
 					<li><span class="pname">PHP</span><div class="bar"><span class="fill"></span></div></li>
 				</ul>
 			</div>
-			</div>
+			</div></div>
+			<div data-aos="fade-up">
 			<div class="sskills">
 				<span class="stitle"><b>Software Skills</b></span>
 				<div class="tilecontainer">
@@ -110,7 +115,8 @@
 					<div class="tile"><span class="sname">Lightroom</span></div>
 					<div class="tile"><span class="sname">Figma</span></div>
 				</div>
-			</div>
+			</div></div>
+			<div data-aos="fade-up">
 			<div class="intrest">
 				<span class="ititle"><b>Intrests</b></span>
 				<div class="icontainer">
@@ -119,9 +125,10 @@
 					<div class="itile"><span class="iname"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#e3f2fd"><path d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"/></svg></span></div>
 					<div class="itile"><span class="iname"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#e3f2fd"><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg></span></div>	
 				</div>
-			</div>
+			</div></div>
 			<footer id="works"></footer>
 		</div>
+		<div data-aos="fade-up">
 		<div class="works">
 			<span class="wotitle"><b>Works</b></span>
 			<div class="websites"><span class="wtitle"><b>Websites</b></span>
@@ -134,15 +141,17 @@
 					<li><div class="wpage"><img src="#"></div><span class="wname">Landing Page</span><a href="#"><div class="wlink">Learn more</div></a></li>
 				</ul>
 			</div>
-		</div>
+		</div></div>
+		<div data-aos="fade-up">
 		<div class="imgfolio">
 			<span class="imgtitle"><b>Photography</b></span>
 			<span class="imgbreif">All images are captured on mobile.</span>
 			<div class="pcontainer">
 				<div class="gallery"></div>
 			</div>
-		</div>
+		</div></div>
 		<footer id="contacts"></footer>
+		<div data-aos="fade-up">
 		<div class="contact">
 			<div class="ccontainer">
                 <span class="ctitle">Let's work Togeather<b>.</b></span>
@@ -165,7 +174,7 @@
                     </form>
                 </div>
             </div>
-		</div>
+		</div></div>
 	</div>
 	<div class="navbar">
 		<ul>
@@ -313,5 +322,9 @@ hamburger.addEventListener('click', ()=>{
 		</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>	
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
