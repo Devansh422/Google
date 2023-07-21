@@ -14,7 +14,7 @@ nav{
         z-index: 2;
         transition: all 0.2s ease;
     }
-.navstrip.dark .hamburger{
+.navstr.dark .hamburger{
         background:#fcfbf4;
 }
     .nav-links{
