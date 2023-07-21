@@ -243,10 +243,8 @@ nav{
   align-items: center;
   height: 220px;
   width: 100%;
-  border: 5px sloid #3c4043;
   border-radius: 45px;
   padding-right: 0;
-  background: #0784b5;
 }
 
 .about .image{
@@ -255,8 +253,6 @@ nav{
   height: 200px;
   width: 200px;
   margin-top: 0px;
-  background: #fff;
-  border:5px solid #0784b5;
   border-radius: 50%;
 }
 .about .image img{
@@ -273,8 +269,6 @@ nav{
   margin: 20px;
   width: 100%;
   border-radius: 50px;
-  border: 5px solid #cadeef;
-  background: #cadeef;
   margin-top: 250px;
 }
 
@@ -283,15 +277,12 @@ nav{
   display: block;
   padding: 50px 30px 50px 30px;
   margin-right: 0px;
-  color: #fff;
   box-sizing: border-box;
-  border: 5px solid #0784b5;
   border-radius: 45px;
   margin-left: 0px;
   width: 100%;
   max-width: fill;
   font-size: 20px;
-  background: #0784b5;
   margin-top: 225px;
 }
 
@@ -372,7 +363,6 @@ nav{
   width: 100%;
   border-radius: 5px;
   margin:2px ;
-  background: #BBDEFB;
   transition: 0.3s;
 }
 .pskills ul li .bar{
@@ -477,8 +467,6 @@ nav{
   display: flex;
   height: 200px;
   width: 200px;
-  border: 10px solid #BBDEFB;
-  background: #0784b5;
   border-radius: 50px;
   align-items: center;
   justify-content: center;
@@ -601,6 +589,11 @@ nav{
     .gallery-item .like-counter {
       display: none;
     }
+
+button{
+  top:-50px;
+  right: -50px;
+}
 
 
 
