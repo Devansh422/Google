@@ -16,7 +16,7 @@
 		
 	</style>
 </head>
-<body>
+<body class="body">
 
 <div class="bgcontainer">
 	<object type="image/svg+xml" data="background.svg" class="bgcontent">
@@ -44,10 +44,10 @@
 				</div>
 				<div class="social">
 					<ul>
-						<li><a href="#"><i class="fa-brands fa-instagram fa-shake fa-2xl"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-github fa-shake fa-2xl"></i></a></li>
+						<li><a href="https://www.instagram.com/funpage_._/"><i class="fa-brands fa-instagram fa-shake fa-2xl"></i></a></li>
+						<li><a href="https://github.com/Devansh422"><i class="fa-brands fa-github fa-shake fa-2xl"></i></a></li>
 						<li><a href="#"><i class="fa-brands fa-linkedin fa-shake fa-2xl"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-pinterest fa-shake fa-2xl"></i></a></li>
+						<li><a href="https://in.pinterest.com/sconedev"><i class="fa-brands fa-pinterest fa-shake fa-2xl"></i></a></li>
 						<li><a href="#"><i class="fa-brands fa-facebook fa-shake fa-2xl"></i></a></li>
 					</ul>
 				</div>
@@ -194,7 +194,7 @@
 	<hr class="line">
 	</div>
 	<nav>
-        <header>
+        <header class="navstrip">
         <span class="logo">P</span>
         <span class="logo">o</span>
         <span class="logo">r</span>
@@ -205,6 +205,28 @@
         <span class="logo">i</span>
         <span class="logo">o</span>
         </header>
+        <button onclick="themeChanger()" class="buton">
+  <div class="btncontainer">
+  <span class="moon"><i class="fa-solid fa-moon fa-8x"></i></span>
+  <div class="toggler"></div>
+  <span class="sun"><i class="fa-solid fa-sun fa-7x"></i></span>
+  </div>
+</button>
+<script type="text/javascript">
+  function themeChanger(){
+    var button = document.querySelector('.buton');
+    var container = document.querySelector('.container');
+    var navbar = document.querySelector('.navbar');
+    var navstrip = document.querySelector('.navstrip');
+    var body = document.querySelector('.body');
+
+    button.classList.toggle("active");
+    container.classList.toggle("dark");
+    navbar.classList.toggle("dark");
+    navstrip.classList.toggle("dark");
+    body.classList.toggle("dark");
+  }
+</script>
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
