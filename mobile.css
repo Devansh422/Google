@@ -14,9 +14,9 @@ nav{
         z-index: 2;
         transition: all 0.2s ease;
     }
-.navstr.dark .hamburger div{
-        background:#fcfbf4;
-}
+    .navstr.dark .hamburger div{
+      background: #fcfbf4;
+    }
     .nav-links{
         position: fixed;
         background: #fcfbf4;
