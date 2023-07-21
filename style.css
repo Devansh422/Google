@@ -1459,7 +1459,9 @@ button{
 .navstrip.dark{
   background: #151515;
 }
-
+.navstr.dark .hamburger div{
+      background: #fcfbf4;
+    }
 
 
 
