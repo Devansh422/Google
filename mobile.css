@@ -14,6 +14,9 @@ nav{
         z-index: 2;
         transition: all 0.2s ease;
     }
+.container.dark .hamburger{
+        background:#fcfbf4;
+}
     .nav-links{
         position: fixed;
         background: #fcfbf4;
